@@ -23,7 +23,7 @@
         <input id="encrypted_link" type="text" class="form-control" placeholder="encrypted ID">
         <p class="mt-3">You can share the decryption website and encrypted ID separately or combine them together with <code>#</code> like this: <code>https://example.com/#ABCD.1234</code></p>
       </div>
-      <div class="card-body"><h3>Decryption servers</h3><pre>https://zyme.ga/decrypt.html</pre></div>
+      <div class="card-body"><h3>Decryption servers</h3><pre>https://zyme.ga/Encrypt-Decrypt/index.html</pre><h3>Decryption server lists</h3><pre>https://gist.githubusercontent.com/ri-dot/397f9f634ffd60a95eb659c35ab8a00e/raw/4998ac15b0dc039e302436e89d8d6b77082ef147/Test</pre></div>
     </div>
   </div></div></div>
 
@@ -121,7 +121,7 @@ document.querySelector("#encrypt").addEventListener("click", async function(even
   document.querySelector("#folder_link").setAttribute("disabled", "");
   document.querySelector("#encrypt").setAttribute("disabled", "");
   try {
-    document.querySelector("#encrypted_link").value = "enltZS5nYS9kZWNyeXB0Lmh0bWw=." + (await encryptFolder());
+    document.querySelector("#encrypted_link").value = "enltZS5nYS9FbmNyeXB0LURlY3J5cHQvaW5kZXguaHRtbDtnOnJpLWRvdC8zOTdmOWY2MzRmZmQ2MGE5NWViNjU5YzM1YWI4YTAwZTxUZXN0." + (await encryptFolder());
   }
   catch(e) {
     alert(e.message);
